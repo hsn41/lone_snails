@@ -50,20 +50,36 @@ header{
     margin: 5px 3px;
     cursor: pointer;
 }
+.shopping_cart{
+    border: 2px solid silver;
+    margin: 5px;
+    height: 70%;
+
+}
 .button:hover {
     background-color: #ccc;
 }
 #item_list{
     text-align: center;
-    text-decoration: underline;
     margin: 10px auto;
     font-size: 15px;
     font-weight: bolder;
     color: #246fa8;
+
+}
+#total_bill{
+    text-align: center;
+    font-weight: bolder;
+    color: #246fa8;
+}
+#payment_button{
+    text-align: center;
+}
+table{
+    padding: 10px;
 }
 .column_labels{
     padding: 15px 12px;
-    text-decoration: underline;
 
 }
 .item_labels{
@@ -77,9 +93,56 @@ header{
     color: #246fa8;
     text-align: center;
 }
+#item_to_sale{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #246fa8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow-x: scroll;
+}
+.polaroid {
+    width: 15%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     #container {width: 90%;}
+    .responsive {
+        width: 5%;
+        margin: 6px 0;
+    }
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}
@@ -96,6 +159,9 @@ header{
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     #container {width: 95%;}
+    .responsive {
+        width: 10%;
+    }
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
